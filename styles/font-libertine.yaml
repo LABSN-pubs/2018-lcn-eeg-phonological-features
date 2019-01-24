@@ -1,0 +1,8 @@
+font.family : serif
+font.serif : Linux Libertine O
+font.size : 11
+
+mathtext.fontset: custom
+mathtext.rm: Linux Libertine O
+mathtext.it: Linux Libertine O:italic
+mathtext.bf: Linux Libertine O:bold
