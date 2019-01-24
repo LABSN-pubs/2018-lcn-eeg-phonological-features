@@ -23,7 +23,7 @@ organically and consequently that repo is not especially orderly. Refactoring
 and cleanup is underway, and the permanent home of the code will be here.
 This message will be updated accordingly when that process is complete.
 
-# pipeline overview
+# Pipeline overview
 
 The steps to reproduce the analysis and manuscript are documented below.
 Scripts that must be run interactively (e.g., for manual marking of
