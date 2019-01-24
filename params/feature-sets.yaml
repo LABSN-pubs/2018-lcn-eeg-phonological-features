@@ -1,0 +1,37 @@
+# these mappings convert the cross-theory feature names in all-features.tsv 
+# into the original feature names within each system
+psa:
+  vocalic: vocalic
+  consonantal: consonantal
+  nasal: nasal
+  flat: flat
+  continuant: continuant
+  strident: strident
+  compact: compact
+  grave: grave
+  tense: tense
+
+spe:
+  vocalic_spe: vocalic
+  consonantal_spe: consonantal
+  nasal_spe: nasal
+  continuant_spe: continuant
+  voiced_spe: voiced
+  coronal: coronal
+  anterior: anterior
+  high: high
+  back: back
+  low: low
+  strident_spe: strident
+
+phoible:
+  consonantal: consonantal
+  labial: labial
+  continuant_phoible: continuant
+  voiced: voiced
+  coronal: coronal
+  dorsal: dorsal
+  anterior_sparse: anterior
+  sonorant: sonorant
+  distributed: distributed
+  strident_phoible: strident

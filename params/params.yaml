@@ -1,0 +1,45 @@
+# inter-stimulus interval range (used when generating stimuli)
+isi_range: [0.3, 0.8]
+# sampling frequency to use when generating the stimuli
+stim_fs: 24414.0625
+
+# concurrent jobs
+n_jobs: 8  # 'cuda' is hard-coded on some lines (for filtering, resampling)
+
+# number of seconds after syllable offset to retain in epoch
+brain_resp_dur: 0.2
+
+# interpolation of bad channels?
+interpolate: false
+
+# reference channel (earlobe)
+ref_channel: ['Ch17']
+
+# channel to use in estimating blinks (no dedicated EOG in this experiment)
+blink_channel:
+  default: Ch1
+  FA: Ch2  # Ch1 noisy for that subject
+
+# channels to discard manually prior to epoching (usu. because their inclusion
+# leads to too many epochs getting rejected).
+bad_channels:
+  IJ: ['Ch3', 'Ch7']  # 32
+  IL: []
+  FA: ['Ch7', 'Ch2', 'Ch1']  # 8, 20
+  IM: ['Ch3']  # 7, 22
+  ID: ['Ch16', 'Ch12', 'Ch7']
+  CQ: ['Ch3']
+  IP: []  # 7, 11, 15, 3
+  FV: ['Ch2', 'Ch7', 'Ch1']
+  IA: ['Ch3']  # 22
+  IV: ['Ch1', 'Ch16', 'Ch7']
+  IQ: ['Ch7', 'Ch3']
+  IT: ['Ch3']
+
+# Rejection criterion (high threshold in volts) for epoch rejection based on
+# bad channels.  Must be a dict, or blank (None) to keep all epochs
+reject:
+  eeg: 0.000075
+
+# DSS components to retain
+n_dss_comp: 5
